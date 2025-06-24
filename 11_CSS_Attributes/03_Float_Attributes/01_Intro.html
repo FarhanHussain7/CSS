@@ -1,0 +1,45 @@
+<!-- - Float allows to keep any element to absolute left or right.
+- Float will continue for next elements.
+- You have to clear float for next element.
+
+Syntax
+        element {
+          float : left
+         }
+
+        nextElement {
+          clear: left, right, both;
+        } -->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Float</title>
+        <style>
+            div {
+                width: 200px;
+                border:2px solid red;
+            }
+            .box-1 {
+                float: left;
+            }
+            .box-2 {
+                float: left;
+            }
+            p {
+                clear: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box-1">
+            Box-1
+        </div>
+        <div class="box-2">
+            Box-2
+        </div>
+        <p>Some paragraph</p>
+    </body>
+</html>
+

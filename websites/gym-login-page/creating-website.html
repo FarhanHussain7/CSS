@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness gym</title>
+</head>
+<style>
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-size: cover;
+    }
+     /* .content{
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        background-image: url(man-2604149.jpg);
+        
+    }  */
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+    .left img{
+        width: 100px;
+    }
+    .left div{
+        text-align: center;
+    }
+
+    .mid{
+        display: block;
+        width: 70%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid green; */
+
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 4px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: gray;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: green;
+      
+    }
+    .container{
+        border: 2px solid white;
+        margin: 100px 30px;
+        padding: 5px 6px;
+        width: 33%;
+        border-radius: 20px;
+    }
+    .container input{
+        text-align: center;
+        display: block;
+        width: 250px;
+        padding: 6px;
+        border: 2px solid black;
+        margin: 10px auto;
+        border-radius: 10px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 250px;
+        margin: 20px auto;
+
+    }
+    .photo{
+        position: absolute;
+        right: 34px;
+        top: 350px;
+        display: inline-block;
+        /* border: 2px solid orange; */
+        border-radius: 10px;
+        box-shadow: inset;
+    }
+</style>
+<body background="/New Folder/pictures/man-2604149.jpg">
+    <section class="content">
+    <header class="header">
+        <!-- left for logo in cornor -->
+        <div class="left">
+          <img src="/New Folder/pictures/gym-logo.png" alt="">
+          <div>fitness anytime</div>
+        </div>
+        <!-- mid for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right for button -->
+        <div class="right">
+            <button class="btn">call us now</button>
+            <button class="btn">email</button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1>join fast tree can save us</h1>
+        <form action="noaction.php">
+            <div class="form.group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+            <div class="form.group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+            <div class="form.group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+    <!-- <div class="photo">
+        <img src="man-8102822_1920.png" width = "140px">
+
+    </div> -->
+    </section>
+</body>
+</html>

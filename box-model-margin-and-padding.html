@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            /* background-color: aqua; */
+            background-image: url('landscape.jpg');
+            
+        }
+        .container{
+            background-color: pink;
+            border: 3px solid red;
+            /* we can set padding by just doing right left top and bottom individualy
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 10px; */
+
+            padding: 14px 30px 40px 78px; /* padding/margin of top right bottom left */
+            /* padding: x(top/bottom) y(rihgt/left) */
+            margin: 34px 50px;
+            border-radius: 30px;
+            width: 500px;
+         
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>this is a heading</h1>
+    <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam provident esse aliquam quod dignissimos tenetur illo ad blanditiis? Fuga fugiat nihil nisi impedit placeat eius quas obcaecati sint omnis? Odit quis reiciendis voluptate accusantium quas, odio alias accusamus voluptas molestias praesentium, assumenda porro exercitationem quam, impedit molestiae deleniti in. Ad?</p>
+    </div>
+    <div class="container">
+        <h1>this is a heading</h1>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam provident esse aliquam quod dignissimos tenetur illo ad blanditiis? Fuga fugiat nihil nisi impedit placeat eius quas obcaecati sint omnis? Odit quis reiciendis voluptate accusantium quas, odio alias accusamus voluptas molestias praesentium, assumenda porro exercitationem quam, impedit molestiae deleniti in. Ad?</p>
+        </div>
+    <div class="container">
+            <h1>this is a heading</h1>
+            <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam provident esse aliquam quod dignissimos tenetur illo ad blanditiis? Fuga fugiat nihil nisi impedit placeat eius quas obcaecati sint omnis? Odit quis reiciendis voluptate accusantium quas, odio alias accusamus voluptas molestias praesentium, assumenda porro exercitationem quam, impedit molestiae deleniti in. Ad?</p>
+    </div>
+</body>
+</html>

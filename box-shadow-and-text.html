@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            /* border: 2px solid red; */
+            background-color: aquamarine;
+            margin: 23px 12px;
+            /* box-shadow offset-x offset-y blur-radious spread-radious color */
+            /* box-shadow: 3px 10px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 7px 5px 10px 34px green; */
+            /* box-shadow: -7px -5x 10px 30px rgba(25, 100, 100, 0.5); */
+            box-shadow: inset 3px 5px green;
+
+            box-shadow: 3px 5px green, 4px 6px red;
+
+        }
+        .card h1{
+            /* text-shadow: 3px 4px blue; */
+            /* text-shadow: 3px 4px 12px blue; */
+            text-shadow: -3px -4px 12px blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h1>this is c++ course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum vel voluptatem vero, consectetur laudantium ipsa error aliquam doloribus ab, natus unde quia incidunt placeat quibusdam quod dolor officia atque nam porro nihil nesciunt!</p>
+        </div>
+        <div class="card" id="car-2">
+            <h1>this is html course</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum vel voluptatem vero, consectetur laudantium ipsa error aliquam doloribus ab, natus unde quia incidunt placeat quibusdam quod dolor officia atque nam porro nihil nesciunt!</p>
+
+        </div>
+        <div class="card" id="car-3">
+            <h1>card3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptatum vel voluptatem vero, consectetur laudantium ipsa error aliquam doloribus ab, natus unde quia incidunt placeat quibusdam quod dolor officia atque nam porro nihil nesciunt!</p>
+
+        </div>
+    </div>
+    
+</body>
+</html>

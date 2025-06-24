@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid with media quary</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+            "navbar navbar navbar navbar" 
+            "section section section aside"
+            "footer footer footer footer";
+
+        }
+        @media only screen and (max-width: 300px){
+            body{
+                background-color: red;
+            }
+            .container{
+            grid-template-areas:
+            "navbar navbar navbar navbar" 
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            aside{
+                display: none;
+            }
+        }
+        @media only screen and (min-width: 300px) and (max-width: 500px){
+            body{
+                background-color: blue;
+            }
+            .container{
+            grid-template-areas:
+            "navbar navbar navbar navbar" 
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+
+        }
+        @media (min-width: 500px) and (max-width: 800px){
+            body{
+                background-color: yellow;
+            }
+            .container{
+            grid-template-areas:
+            "navbar navbar navbar navbar" 
+            "section section section section"
+            "aside aside aside aside"
+            "footer footer footer footer";
+
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+        }
+        @media (min-width: 800px){
+            body{
+                background-color: green;
+            }
+            span{
+            display: block;
+            text-align: center;
+        }
+        }
+        .bdr{
+            border: 2px solid black;
+            padding: 20px;
+            background-color: white;
+        }
+        nav{
+            grid-area: navbar;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>Home</span>
+            <span>About us</span>
+            <span>contact</span>
+            <span>Home</span>
+        </nav>
+        <section class="bdr">
+            <h1>learn css in hindi</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ab quam harum quae, reprehenderit accusamus enim soluta adipisci cumque aperiam quasi perferendis amet optio magni aspernatur tenetur reiciendis quia nobis porro magnam. Delectus non autem tenetur, minima eaque consequatur corrupti pariatur reprehenderit illo? Quasi reiciendis earum placeat sapiente totam ducimus quibusdam ipsum quidem, mollitia tempora veritatis, nemo nobis magnam dolorum iusto corrupti eius quaerat ex ipsa. Quae eos molestiae vitae! Ratione rerum sit necessitatibus, corrupti aspernatur dolorum molestias, exercitationem ex a aliquid, repellendus voluptate placeat veniam in? Rem minus possimus molestias illum assumenda, nobis exercitationem animi quaerat vero itaque doloremque commodi cumque veniam quam! Iure dolorum perferendis voluptas? Natus beatae quas aut, omnis voluptatum praesentium illum error earum veritatis neque cumque magni est? Aut quam itaque maiores laborum totam modi repellendus vel placeat, voluptas cum distinctio! Optio deserunt, necessitatibus deleniti consequuntur iste quae soluta eveniet dolorem totam reiciendis ipsa ipsum laboriosam ex voluptas rem, quod tempora eos consequatur! Deserunt, officiis magni quos asperiores obcaecati eos accusamus vero laborum eveniet quae ipsa libero excepturi, unde repellendus dolorem esse, atque earum dicta eligendi est voluptas. Perferendis, vero minima! Necessitatibus voluptate architecto quibusdam, rem maiores quidem unde mollitia ab cum eveniet esse cumque.</p>
+        </section>
+        <aside class="bdr">
+            <h1>more about us </h1>
+        </aside>
+    </div>
+    <footer class="bdr">contact us for more</footer>
+</body>
+</html>
+
+
+
+

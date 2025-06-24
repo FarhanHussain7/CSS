@@ -1,0 +1,39 @@
+<!-- - They are used to control the display of elements in page.
+
+        display        : none
+        display        : block
+        display        : inline
+        display        : grid
+        display        : flex
+
+
+none        : To hide any element in page.
+block        : To show element in block style. [below existing]
+inline        : To show element beside existing -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display Attributes </title>
+    <style>
+        #UserName:valid+span{
+            display: none;
+        }
+        /* #UserName:invalid+span{
+            display: inline;
+        } */
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd>
+            <input type="text" id="UserName" required>
+            <span>User Name Required
+            </span>
+        </dd>
+    </dl>
+</body>
+</html>

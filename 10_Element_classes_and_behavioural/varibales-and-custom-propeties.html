@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS varibales and custom properties</title>
+    <style>
+        :root{
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px;
+        }
+        .box{
+            --box-color: pink;
+            width: 200px;
+            height: 200px;
+            background-color: var(--box-color);
+            border: 2px solid var(--danger-color);
+            margin: 2px 5px;
+            box-shadow: 3px 3px var(--box-color);
+        }
+        .container{
+            align-items: center;
+            justify-content: center;
+            max-width: var(--maxw);
+            margin: auto;
+            background-color: var(--danger-color);
+            display: flex;
+            /* background-color: var(--box-color); */
+        }
+        p:lang(en){
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <p>this is used to check lang slector</p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!-- 
+FAQ: Can we make background image transparent?
+Ans:  No. You can't set transparent image.
+         You have to configure background with a cover that can be transparent using "rgba()" 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background</title>
+        <style>
+           body {
+               background-image: url("/New Folder/pictures/netflixbanner.jpg");
+               background-size: cover;
+               height: 400px;
+               background-repeat: no-repeat;
+           }
+           .body-cover {
+               width: 110%;
+               height: 400px;
+               background-color: rgba(0,0,0,0.6);
+               margin-top: -30px;
+               margin-left: -30px;
+
+           }
+        </style>
+    </head>
+    <body>
+       <div class="body-cover">
+
+       </div>
+    </body>
+</html>
+
+

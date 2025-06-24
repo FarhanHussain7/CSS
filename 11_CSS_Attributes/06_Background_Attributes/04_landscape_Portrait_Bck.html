@@ -1,0 +1,30 @@
+<!-- 
+FAQ: Can we change background image and color according to situation?
+Ans:  Yes. By using "@media()" queries
+ -->
+
+
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background</title>
+        <style>
+           @media screen and (orientation:landscape){
+               body{
+                   background-image: url("/New Folder/pictures/collage.jpg");
+                   background-size: cover;
+               }
+           }
+           @media screen and (orientation:portrait){
+               body{
+                   background-image: url("/New Folder/pictures/landscape.jpg");
+                   background-size: cover;
+               }
+           }
+        </style>
+    </head>
+    <body>
+       
+    </body>
+</html>

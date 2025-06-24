@@ -1,0 +1,53 @@
+<!-- - It depends on hierarchy parent-child
+- It is to handle various occurances in hierarchy.
+
+:first-child
+:last-child
+:nth-child()
+:nth-of-type()
+:nth-last-of-type()
+
+Syntax:
+        :nth-child(2)
+        :nth-child(even)
+        :nth-child(odd)
+
+        :nth-of-type(2)        only 2nd
+        :nth-of-type(2n)        for every 2nd occurance
+        :nth-of-type(2n+1)        for every 2nd starting with 1st from top
+        :nth-last-of-type(2n+1)   starting from bottom
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        li:nth-last-of-type(2n+1){
+            color: red;
+        }
+        li:nth-child(5){
+            color: blue;
+            border: 2px dotted gray;
+        }
+        li:nth-of-type(1){
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Items-1</li>
+        <li>Items-2</li>
+        <li>Items-3</li>
+        <li>Items-4</li>
+        <li>Items-5</li>
+        <li>Items-6</li>
+        <li>Items-7</li>
+        <li>Items-8</li>
+        <li>Items-9</li>
+        <li>Items-10</li>
+    </ol>
+</body>
+</html>

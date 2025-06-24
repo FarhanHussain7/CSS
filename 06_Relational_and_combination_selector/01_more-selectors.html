@@ -1,0 +1,66 @@
+<!-- -These selectors are used for elements having parent and child hierarchy or siblings.
+
+	Child Selector			Parent child { }
+				It applies effect at any level of child.
+
+	Decendent Selector		Parent > child { }
+				It applies only to direct child.
+
+	Adjacent Sibling		element+sibling { }
+				It applies effet only to adjacent element.
+
+	General Sibling			element~sibling { }
+				It applies to all siblings. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* if p is contained by any li which is contained by div */
+        /* div li p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* Decendent Selector 
+        if p is right inside div then this css will be applied */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold; 
+        }*/
+        
+        /* Adjacent sibling
+        if p is right  after div i.e p is the next sibiling of div */
+        /* div + p{
+            color: white;
+            background-color: red;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>this is more selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>this is another paragraph inside li</p></li>
+                <!-- <li>this will not get effective</li> -->
+               
+            </ul>
+            <p>this another paragraph</p>
+        </div>
+    </div>
+    <p>this is another paragraph</p>
+</body>
+</html>

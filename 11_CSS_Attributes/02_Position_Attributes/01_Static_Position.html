@@ -1,0 +1,46 @@
+<!-- - It is the default position.
+- It will keep element according to normal flow of document.
+- It will not allow to change position with left, right, top or bottom attributes.
+
+Syntax:
+         element {
+            position: static;
+         }
+ -->
+
+
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <style>
+         div {
+             border: 2px solid red;
+         }
+ 
+         aside {
+             border: blue dotted 2px;
+             width: 100px;
+             background-color: yellow;
+             position: static;
+             left: 200px;
+             top: 300px;
+         }
+     </style>
+ </head>
+ 
+ <body>
+     <div>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequatur blanditiis corrupti deserunt
+         eveniet ipsum quo nostrum, eum laboriosam repudiandae, accusantium non. Deserunt, dolore ratione corrupti
+         dolores officiis animi doloribus.
+         <aside>
+             Special Offer
+         </aside>
+     </div>
+ 
+ </body>
+ 
+ </html>
+ 

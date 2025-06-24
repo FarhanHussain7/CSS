@@ -1,0 +1,42 @@
+<!-- 
+text-decoration        :  It can set text decoration as underline,
+                   overline, line through etc..
+                 
+                   text-decoration : style, color, size
+                 
+Syntax:
+        p {
+            text-decoration-style  : wavy, double, dotted, solid;
+            text-decoration-line    : underline, overline,
+            text-decoration-color  : colorname, code
+                     text-decoration-thickness: size;
+         }
+
+        p{
+           text-decoration: 2px dotted underline red;
+         } 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Decoration</title>
+    <style>
+        /* Give Text decoration one by one with different attributes */
+        p{
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+            text-decoration-color: cadetblue;
+            text-decoration-thickness: 10px;
+        }
+        /* Giving Text Decoration in Single Line attributes */
+        p{
+            text-decoration: 2px dotted line-through red;
+        }
+    </style>
+</head>
+<body>
+    <p>this is Text Decoration in css</p>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!-- Absolute Position
+- It removes element from normal flow of document.
+- It can be controlled with left, right, top and bottom attributes.
+- But it is fixed with the relative content.
+- It will be along with the content.
+
+Syntax:
+           element {
+          position: absolute;
+          right: 10px;
+          top:20px;
+        }
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        div {
+            border: 2px solid red;
+        }
+
+        aside {
+            border: blue dotted 2px;
+            width: 100px;
+            background-color: yellow;
+            position: absolute;
+            left: 200px;
+            top: 300px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequatur blanditiis corrupti deserunt
+        eveniet ipsum quo nostrum, eum laboriosam repudiandae, accusantium non. Deserunt, dolore ratione corrupti
+        dolores officiis animi doloribus.
+        <aside>
+            Special Offer
+        </aside>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,137 @@
+<!-- Display Flex
+- Inline is used for individual elements
+- Flex is used for container that contains elements.
+- Flexible display
+- It can Warp contents, set space between contents, align content to top, center, bottom [verticially] or  left, center, right. [horizontally]
+
+Attributes:
+display:flex
+flex:wrap
+flex-direction:row                ]
+flex-direction:row-reverse        ]        direction
+flex-direction:column                ]
+flex-direciton:column-reverse        ] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flex Attribute</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+         .card {
+                width: 150px;
+                padding: 20px;
+                margin: 20px;
+                box-shadow: 3px 3px 3px gray;
+                text-align: center;
+                font-family: Arial;
+            }
+            .card-image {
+                width: 100%;
+                height: 120px;
+            }
+            .card-header {
+                margin-top: 20px;
+                font-weight: bold;
+            }
+            .card-body {
+                margin-top: 20px;
+                color:goldenrod;
+            }
+            .card-footer {
+                margin-top: 20px;
+                color:blueviolet;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column-reverse; 
+                justify-content: space-evenly;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img class="card-image" src="/New Folder/pictures/ImageCard01.PNG">
+            <div class="card-header">
+                Digital Marketing Online Training
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <div class="card-footer">
+                View Course
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="/New Folder/pictures/ImageCard02.PNG">
+            <div class="card-header">
+                ASP.NET Online Training
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <div class="card-footer">
+                View Course
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="/New Folder/pictures/Imagecard03.PNG">
+            <div class="card-header">
+                Android Online Training
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <div class="card-footer">
+                View Course
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="/New Folder/pictures/ImagesCard04.PNG">
+            <div class="card-header">
+                Automation Online Training
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <div class="card-footer">
+                View Course
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-image" src="/New Folder/pictures/ImageCard05.PNG">
+            <div class="card-header">
+                Linux|Unix Online Training
+            </div>
+            <div class="card-body">
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+                <span class="bi bi-star-fill"></span>
+            </div>
+            <div class="card-footer">
+                View Course
+            </div>
+        </div>
+    </div>
+</body>
+</html>

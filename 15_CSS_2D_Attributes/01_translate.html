@@ -1,0 +1,66 @@
+<!-- 			
+			CSS 2D
+
+            - 2D is 2 Dimensional Effects
+            - Along X and Y axis.
+            - It allows to change position, size, orientation of text.
+            - We have to use "transform" attribute for 2D.
+            - Transform attribute have browser dependency issues, hence we have to use with the help of css style.
+            
+                    transform	  : effect;
+                    webkit-transform  : chrome, safari, edge, opera
+                    moz-transform 	  : firefox
+                    o-transform	  : opera
+                    ms-transfrom	  : internet explorer
+            
+            - CSS 2D tranfroms are-
+                translate()
+                scale()
+                rotate()
+                skew()
+                matrix()
+            
+                            CSS Translate
+            
+            - It is used to change the position of element in page.
+            - You can move element along x and y axis.
+            
+                    translate(200px)
+                    translate(200px, 300px)
+                    translateX(200px)
+                    translateY(300px)
+            
+            - You can control thr transform time by using "transition".
+            
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transition: 2s;
+           
+        }
+        img:hover{
+            transform: translate(-200px, -200px);
+            transition: 2s;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="/New Folder/pictures/jacket.jpg" height="100px" width="100px">
+</div>
+</body>
+</html>

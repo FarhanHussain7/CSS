@@ -1,0 +1,35 @@
+<!-- border-image        : You can set image as border
+
+Rules:        
+        - You have to define border
+               border : 20px solid transparent;
+        - You have to define suitable image
+               border-image: url()
+        - You have to define display style
+               a) space
+               b) stretch
+        - You have to define outset percent
+               1 to 100 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors</title>
+        <style>
+           .container {
+              border:20px solid transparent;
+              border-image: url("/New Folder/pictures/BorderImage01.png") space 80;
+              padding: 10px;
+           }
+        </style>
+    </head>
+    <body>
+       <div class="container">
+            Container
+            <p>Para in container</p>
+       </div>
+    </body>
+</html>
+
+

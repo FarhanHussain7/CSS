@@ -1,0 +1,53 @@
+<!-- @media queries
+
+
+Media Queries
+
+	@media type and (query)
+	{
+	}
+
+type		: screen, print, speech
+
+syntax:-
+	@media print
+	{
+	}
+	@media screen
+	{
+	} 
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query</title>
+    <style>
+        @media screen {
+            p{
+                border: 3px solid brown;
+                background-color: yellow;
+                color: red;
+                padding: 5px;
+            }
+        }
+        @media print {
+            p{
+                border: none;
+                background: none;
+                color: black;
+            }
+            img{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p><img src="/New Folder/pictures/food.jpg" width="100%" height="100%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique commodi inventore et tempore illum quod laudantium itaque, incidunt dolorum. Ipsa dicta debitis consectetur quasi, quam itaque quaerat aut, fuga ducimus repellendus illo accusantium suscipit voluptatum animi corporis hic natus nihil quibusdam aliquid. Perferendis debitis ab repellendus voluptates cum quae?</p>
+</body>
+</html>

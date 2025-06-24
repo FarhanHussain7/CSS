@@ -1,0 +1,30 @@
+<!-- FAQ: How to design a drop cap?
+Ans:  By using
+        Selector         ::first-letter
+        Float         : left
+        Font-size
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        p::first-letter{
+           font-size: 40px;
+           font-family: Arial;
+           font-weight: bold;
+           float: left;
+           color:red;
+           margin-right: 5px;
+           margin-bottom: -5px;
+        }
+     </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus corporis, reprehenderit labore cum debitis ipsa impedit. Nihil vitae, illum nisi necessitatibus officia, odit aperiam libero repudiandae laboriosam autem tenetur velit?</p>
+</body>
+</html>

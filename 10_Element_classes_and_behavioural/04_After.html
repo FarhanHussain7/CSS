@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Selectors</title>
+        <style>
+            ul {
+                display:flex;
+                list-style: none;
+            }
+            li::after{
+                content: " / ";
+                margin-left: 5px;
+            }
+            li:first-child::after{
+                content: "";
+            }
+            li:last-child {
+                color:gray;
+            }
+        </style>
+    </head>
+    <body>
+       <ul>
+           <li>Home</li>
+           <li>Categories</li>
+           <li>Electronics</li>
+           <li>Mobiles</li>
+           <li>Samsung</li>
+       </ul>
+    </body>
+</html>

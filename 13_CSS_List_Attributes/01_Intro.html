@@ -1,0 +1,44 @@
+<!-- - List attributes are used for displaying ordered list and unordered list.
+
+list-style                : short hand for list items
+                  none - to remove numbering or bullets.
+
+Syntax:
+        ol, ul {
+           list-style: none;
+        }
+
+list-style-type        : numbered, lower-alpha, disc, etc..
+
+list-style-image        : custom image for list item.
+
+list-style-position        : Inside or outside 
+-->
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Background</title>
+        <style>
+            ol {
+                list-style-image: url("/New Folder/pictures/gifImage01.gif");
+                list-style-position: outside;
+            }
+            li {
+                border: 2px solid red;
+                padding: 5px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+       <ol>
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>JavaScript</li>
+           <li>JQuery</li>
+       </ol>
+    </body>
+</html>
+

@@ -1,0 +1,36 @@
+<!-- FAQ:- If we are writing effects with all selector which one will apply?
+Ans:
+ 		If you are writing same attributes with all 3 selector then
+		1st Priority	ID
+		2nd Priority	Class
+		3rd Priority 	Type
+	If you are writing different attributes then all will apply -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        #heading{
+            color: red;
+        }
+        .head{
+            color: green;
+            text-align: center;
+        }
+        h1{
+            color: blue;
+            background-color: yellow;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="head">Web Technologies</h1>
+    <h1>HTML</h1>
+    <h1>CSS</h1>
+    <h1>JavaScript</h1>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- 
+- It rotate element by specified angle. [value in dog]
+- You can give -ve angle for counter-clock-wise.
+		rotate()
+		rotateX()
+		rotateY()
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transition: 2s;
+           
+        }
+        img:hover{
+            transform: rotateY(360deg);
+            transition: 2s;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="/New Folder/pictures/jacket.jpg" height="100px" width="100px">
+</div>
+</body>
+</html>

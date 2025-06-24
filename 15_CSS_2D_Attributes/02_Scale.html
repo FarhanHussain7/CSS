@@ -1,0 +1,42 @@
+<!-- Scale()
+- It is used to change the size of element.
+- It is uses the width and height
+- It is used the value 1= 100
+
+		scale()		width and height
+		scaleX()	width
+		scaleY()	height
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            transition: 2s;
+           
+        }
+        img:hover{
+            transform: scale(5, 7);
+            transition: 2s;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <img src="/New Folder/pictures/jacket.jpg" height="100px" width="100px">
+</div>
+</body>
+</html>
+
+
+

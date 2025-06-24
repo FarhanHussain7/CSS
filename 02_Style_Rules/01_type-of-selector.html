@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector</title>
+    <style>
+        /* element selector */
+        p{
+            border: 2px solid rgba(255, 0, 13, 0.479);
+        }
+        /* if we put a (.)before id element than id selector is work for class selector */
+        /* id selector */
+        #firstparagraph{
+            color: red;
+        }
+        /* class selector */
+        .bgblue{
+            color: yellow;
+            background-color: blue;
+        }
+        /* grouping selector */
+        footer, span{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>css selector
+    </h1>
+    <p id="firstparagraph">this is a simple paragraph to demonstrate css selector</p>
+    <p id="secondpara" class="redelement bgblue">this is a another simple paragraph to demonstrate css selector</p>
+    <div>
+    <p>this is a yet another paragraph to demonstrate css selector</p>
+    <span>this is span</span>
+    </div>
+    <footer>
+        this is footer
+    </footer>
+</body>
+</html>
